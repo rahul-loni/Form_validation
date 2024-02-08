@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Test Drive Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Car Test Drive Request</h1>
+    <form id="testDriveForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+        </div>
+        <div>
+            <label>Age Range:</label><br>
+            <input type="radio" id="ageUnder18" name="age" value="under18">
+            <label for="ageUnder18">Under 18</label>
+            <input type="radio" id="age18to40" name="age" value="18to40">
+            <label for="age18to40">18 to 40</label>
+            <input type="radio" id="ageOver40" name="age" value="over40">
+            <label for="ageOver40">Over 40</label>
+            <span class="error" id="ageError"></span>
+        </div>
+        <div>
+            <label>Cars to Test Drive:</label><br>
+            <input type="checkbox" id="car1" name="cars" value="car1">
+            <label for="car1">Car 1</label>
+            <input type="checkbox" id="car2" name="cars" value="car2">
+            <label for="car2">Car 2</label>
+            <input type="checkbox" id="car3" name="cars" value="car3">
+            <label for="car3">Car 3</label>
+            <input type="checkbox" id="car4" name="cars" value="car4">
+            <label for="car4">Car 4</label>
+            <span class="error" id="carsError"></span>
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script src="style.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* Add your CSS styles here */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+input:focus {
+    background-color: lightgreen;
+}
